@@ -32,7 +32,7 @@ class SignUp extends React.Component <{},any>{
   render() {
     const { firstname,lastname, emailaddress, password } = this.state;
     return (
-      <form className="Signup-form">
+      <form className="Signup-form" onSubmit={this.handleSubmit}>
          <div className="input-container">
           <label className="label">Firstname: </label>
           <input
